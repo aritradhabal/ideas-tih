@@ -1,5 +1,5 @@
 import React from "react";
-import Homepage from "./pages/Homepage";
+import HomePage from "./pages/HomePage";
 import { Route, Routes } from "react-router-dom";
 import ProductPage from "./pages/ProductPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/products" element={<ProductPage />}>
