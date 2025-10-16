@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Separator } from "@/components/ui/separator";
 import { MdAccountCircle } from "react-icons/md";
+import { IoMdSettings } from "react-icons/io";
+
 import { useProductStore } from "@/store/useProductStore";
 const Navbar = () => {
   return (
@@ -34,6 +36,9 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row justify-center items-center gap-x-4 ">
+          <Link to="/home/settings">
+            <IoMdSettings color={"#a1a1aa"} size={30} />
+          </Link>
           <Link to="/home/profile">
             <MdAccountCircle color={"#a1a1aa"} size={30} />
           </Link>
