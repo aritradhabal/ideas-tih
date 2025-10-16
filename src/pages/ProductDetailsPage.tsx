@@ -9,8 +9,9 @@ const ProductDetailsPage = () => {
   const { id } = useParams();
   const { data: product = {} as Product, isLoading: isLoadingProduct } =
     useQuery<Product>({
+      enabled: !!id,
       queryKey: ["productDetails", id],
-      queryFn: () => getProductDetails(Number(id)),
+      queryFn: () => getProductDetails(id as string),
     });
   return (
     <div className="lg:w-3xl xl:w-4xl mx-auto">

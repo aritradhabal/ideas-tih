@@ -4,7 +4,7 @@ import { getProducts } from "@/api/getProducts";
 import ProductCard from "@/components/ProductCard";
 
 export type Product = {
-  id: number;
+  id: string;
   name: string;
   price: number;
   category: string;

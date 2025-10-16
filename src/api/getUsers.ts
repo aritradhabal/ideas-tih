@@ -1,15 +1,6 @@
 const BASE_URL = import.meta.env.VITE_API_URL;
-import db from "@/assests/db.json";
+import db from "@/assets/db.json";
 import type { User } from "@/pages/ProfilePage";
-
-// export async function getUsers() {
-//   const response = await fetch(`${BASE_URL}/users`);
-//   if (!response.ok) {
-//     throw new Error("Failed to fetch user");
-//   }
-//   return response.json();
-// }
-
 export async function getUsers(): Promise<User[]> {
   try {
     const response = await fetch(`${BASE_URL}/users`);

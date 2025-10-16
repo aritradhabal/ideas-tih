@@ -4,7 +4,7 @@ import { getUsers } from "@/api/getUsers";
 import ProfilePageCard from "@/components/ProfilePageCard";
 
 export type User = {
-  id: number;
+  id: string;
   name: string;
   email: string;
 };

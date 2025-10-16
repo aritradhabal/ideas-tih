@@ -1,15 +1,8 @@
 const BASE_URL = import.meta.env.VITE_API_URL;
 import type { Product } from "@/pages/ProductPage";
-import db from "@/assests/db.json";
-// export async function getProductDetails(id: number) {
-//   const response = await fetch(`${BASE_URL}/products/${id}`);
-//   if (!response.ok) {
-//     throw new Error("Failed to fetch product details");
-//   }
-//   return response.json();
-// }
+import db from "@/assets/db.json";
 
-export async function getProductDetails(id: number): Promise<Product> {
+export async function getProductDetails(id: string): Promise<Product> {
   try {
     const response = await fetch(`${BASE_URL}/products/${id}`);
     if (!response.ok) throw new Error(`API error ${response.status}`);

@@ -6,6 +6,7 @@ import ProductDetailsPage from "@/pages/ProductDetailsPage";
 import ProfilePage from "@/pages/ProfilePage";
 import SettingsPage from "@/pages/SettingsPage";
 import Navbar from "@/pages/Navbar";
+import { Toaster } from "sonner";
 
 const RouteHandler = () => {
   return (
@@ -23,6 +24,7 @@ const RouteHandler = () => {
           <Route path="products/:id" element={<ProductDetailsPage />} />
         </Route>
       </Routes>
+      <Toaster />
     </>
   );
 };
