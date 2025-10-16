@@ -5,7 +5,6 @@ import ProductPage from "@/pages/ProductPage";
 import ProductDetailsPage from "@/pages/ProductDetailsPage";
 import ProfilePage from "@/pages/ProfilePage";
 import SettingsPage from "@/pages/SettingsPage";
-import CartPage from "@/pages/CartPage";
 import Navbar from "@/pages/Navbar";
 
 const RouteHandler = () => {
@@ -22,7 +21,6 @@ const RouteHandler = () => {
           <Route path="settings" element={<SettingsPage />} />
           <Route path="products" element={<ProductPage />} />
           <Route path="products/:id" element={<ProductDetailsPage />} />
-          <Route path="cart" element={<CartPage />} />
         </Route>
       </Routes>
     </>

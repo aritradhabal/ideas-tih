@@ -103,23 +103,26 @@ export default function Homepage() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-5xl tracking-tight text-balance text-gray-900 sm:text-7xl dark:text-white">
+            <h1 className="text-6xl tracking-tight text-balance text-gray-900 sm:text-7xl dark:text-white">
               <span className="font-extralight hover:font-extrabold transition-all duration-300">
-                Shop
+                Manage
               </span>{" "}
               <span className="font-seirf italic hover:font-extrabold transition-all duration-300">
-                anything
+                products
               </span>{" "}
               <span className="font-extralight hover:font-extrabold transition-all duration-300">
-                you need
+                &
+              </span>{" "}
+              <span className="font-seirf italic hover:font-extrabold transition-all duration-300">
+                users
               </span>{" "}
               <span className="font-extralight hover:font-extrabold transition-all duration-300">
-                at one place
-              </span>
+                all at once
+              </span>{" "}
             </h1>
             <p className="mt-8 text-lg text-pretty font-medium text-slate-700 sm:text-xl/8 dark:text-slate-700">
-              Discover a seamless shopping experience designed to bring all your
-              favorite products together. Explore, compare, and purchase.
+              Discover a seamless inventory management experience designed to
+              connect all your products and users together.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link to="/home/products">

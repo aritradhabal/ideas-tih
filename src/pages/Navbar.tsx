@@ -10,8 +10,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Separator } from "@/components/ui/separator";
 import { MdAccountCircle } from "react-icons/md";
-import { MdShoppingCart } from "react-icons/md";
-
+import { useProductStore } from "@/store/useProductStore";
 const Navbar = () => {
   return (
     <>
@@ -35,9 +34,6 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row justify-center items-center gap-x-4 ">
-          <Link to="/home/cart">
-            <MdShoppingCart color={"#a1a1aa"} size={30} />
-          </Link>
           <Link to="/home/profile">
             <MdAccountCircle color={"#a1a1aa"} size={30} />
           </Link>
@@ -53,6 +49,7 @@ const Navbar = () => {
 export default Navbar;
 
 export const NavbarBreadcrumb = () => {
+  const { product } = useProductStore();
   const location = useLocation();
   const params = useParams();
 
@@ -65,7 +62,7 @@ export const NavbarBreadcrumb = () => {
 
     const label =
       segment === params.id
-        ? "Product Details " + params.id
+        ? product?.name || segment.charAt(0).toUpperCase() + segment.slice(1)
         : segment.charAt(0).toUpperCase() + segment.slice(1);
 
     const isLast = index === pathSegments.length - 1;
