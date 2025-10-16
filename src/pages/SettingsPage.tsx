@@ -12,12 +12,13 @@ const inputClass =
   "flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-xs transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:border-ring disabled:cursor-not-allowed disabled:opacity-50";
 
 const SettingsPage = () => {
+  const { allProducts, setAllProducts, addProduct } = useUpdateProductsStore();
+  const hasStoredProducts = allProducts.length > 0;
   const { data: products = [], isLoading } = useQuery<Product[]>({
+    enabled: !hasStoredProducts,
     queryKey: ["products"],
     queryFn: getProducts,
   });
-
-  const { allProducts, setAllProducts, addProduct } = useUpdateProductsStore();
 
   const [newProduct, setNewProduct] = useState<{
     name: string;

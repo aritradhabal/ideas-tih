@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "@/api/getProducts";
 import ProductCard from "@/components/ProductCard";
+import { useUpdateProductsStore } from "@/store/updateProductsStore";
 
 export type Product = {
   id: string;
@@ -12,13 +13,16 @@ export type Product = {
 };
 
 const ProductPage = () => {
+  const { allProducts: productsFromStore } = useUpdateProductsStore();
+  const hasStoredProducts = productsFromStore.length > 0;
   const { data: products = [], isLoading: isLoadingProducts } = useQuery<
     Product[]
   >({
+    enabled: !hasStoredProducts,
     queryKey: ["products"],
     queryFn: getProducts,
   });
-
+  const displayProducts = hasStoredProducts ? productsFromStore : products;
   return (
     <div className="lg:w-6xl xl:w-7xl mx-auto">
       <h1 className="text-3xl font-semibold mb-6">Products</h1>
@@ -26,7 +30,7 @@ const ProductPage = () => {
         <p className="text-muted-foreground">Loading products...</p>
       ) : (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {products?.map((p) => (
+          {displayProducts?.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}
         </div>
