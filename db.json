@@ -1,0 +1,10 @@
+{
+  "products": [
+    { "id": 1, "name": "Laptop Pro", "price": 1200, "category": "Electronics", "stock": 20 },
+    { "id": 2, "name": "Smartwatch X", "price": 250, "category": "Wearables", "stock": 45 },
+    { "id": 3, "name": "Desk Chair", "price": 150, "category": "Furniture", "stock": 10 }
+  ],
+  "users": [
+    { "id": 1, "name": "John Doe", "email": "john@example.com" }
+  ]
+}
