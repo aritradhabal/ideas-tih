@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const BASE_URL = import.meta.env.VITE_API_URL;
 import type { Product } from "@/pages/ProductPage";
 import db from "@/assests/db.json";
 // export async function getProductDetails(id: number) {
