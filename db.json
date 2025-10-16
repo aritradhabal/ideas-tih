@@ -1,10 +1,109 @@
 {
   "products": [
-    { "id": 1, "name": "Laptop Pro", "price": 1200, "category": "Electronics", "stock": 20 },
-    { "id": 2, "name": "Smartwatch X", "price": 250, "category": "Wearables", "stock": 45 },
-    { "id": 3, "name": "Desk Chair", "price": 150, "category": "Furniture", "stock": 10 }
+    {
+      "id": 1,
+      "name": "Laptop Pro",
+      "price": 1200,
+      "category": "Electronics",
+      "stock": 20
+    },
+    {
+      "id": 2,
+      "name": "Smartwatch X",
+      "price": 250,
+      "category": "Wearables",
+      "stock": 45
+    },
+    {
+      "id": 3,
+      "name": "Desk Chair",
+      "price": 150,
+      "category": "Furniture",
+      "stock": 10
+    },
+    {
+      "id": 4,
+      "name": "Laptop Pro",
+      "price": 1200,
+      "category": "Electronics",
+      "stock": 20
+    },
+    {
+      "id": 5,
+      "name": "Smartwatch X",
+      "price": 250,
+      "category": "Wearables",
+      "stock": 45
+    },
+    {
+      "id": 6,
+      "name": "Desk Chair",
+      "price": 150,
+      "category": "Furniture",
+      "stock": 10
+    },
+    {
+      "id": 7,
+      "name": "Laptop Pro",
+      "price": 1200,
+      "category": "Electronics",
+      "stock": 20
+    },
+    {
+      "id": 8,
+      "name": "Smartwatch X",
+      "price": 250,
+      "category": "Wearables",
+      "stock": 45
+    },
+    {
+      "id": 9,
+      "name": "Desk Chair",
+      "price": 150,
+      "category": "Furniture",
+      "stock": 10
+    },
+    {
+      "id": 10,
+      "name": "Laptop Pro",
+      "price": 1200,
+      "category": "Electronics",
+      "stock": 20
+    },
+    {
+      "id": 11,
+      "name": "Smartwatch X",
+      "price": 250,
+      "category": "Wearables",
+      "stock": 45
+    },
+    {
+      "id": 12,
+      "name": "Desk Chair",
+      "price": 150,
+      "category": "Furniture",
+      "stock": 10
+    },
+    {
+      "id": 13,
+      "name": "Laptop Pro",
+      "price": 1200,
+      "category": "Electronics",
+      "stock": 20
+    },
+    {
+      "id": 14,
+      "name": "Smartwatch X",
+      "price": 250,
+      "category": "Wearables",
+      "stock": 45
+    }
   ],
   "users": [
-    { "id": 1, "name": "John Doe", "email": "john@example.com" }
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com"
+    }
   ]
 }
