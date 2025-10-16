@@ -16,19 +16,19 @@ export default function Homepage() {
           className="flex items-center justify-between p-6 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5 cursor-pointer">
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
                 src="https://img.icons8.com/?size=100&id=XrEFnp33pJYw&format=png&color=000000"
-                className="h-8 w-auto dark:hidden"
+                className="h-10 w-auto dark:hidden"
               />
               <img
                 alt=""
                 src="https://img.icons8.com/?size=100&id=XrEFnp33pJYw&format=png&color=000000"
-                className="h-8 w-auto not-dark:hidden"
+                className="h-10 w-auto not-dark:hidden"
               />
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -42,7 +42,7 @@ export default function Homepage() {
           </div>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link to="/profile">
+            <Link to="/home/profile">
               <MdAccountCircle color={"#a1a1aa"} size={35} />
             </Link>
           </div>
@@ -55,19 +55,19 @@ export default function Homepage() {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-gray-900 dark:sm:ring-gray-100/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <Link to="/" className="-m-1.5 p-1.5 cursor-pointer">
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
                   src="https://img.icons8.com/?size=100&id=XrEFnp33pJYw&format=png&color=000000"
-                  className="h-8 w-auto dark:hidden"
+                  className="h-10 w-auto dark:hidden"
                 />
                 <img
                   alt=""
                   src="https://img.icons8.com/?size=100&id=XrEFnp33pJYw&format=png&color=000000"
-                  className="h-8 w-auto not-dark:hidden"
+                  className="h-10 w-auto not-dark:hidden"
                 />
-              </a>
+              </Link>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
@@ -80,12 +80,7 @@ export default function Homepage() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10 dark:divide-white/10">
                 <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
-                  >
-                    <MdAccountCircle color={"#a1a1aa"} size={35} />
-                  </a>
+                  <MdAccountCircle color={"#a1a1aa"} size={35} />
                 </div>
               </div>
             </div>
@@ -127,7 +122,7 @@ export default function Homepage() {
               favorite products together. Explore, compare, and purchase.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link to="/products">
+              <Link to="/home/products">
                 <Button
                   variant={"outline"}
                   className="cursor-pointer text-slate-800"
